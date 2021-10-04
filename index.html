@@ -9,13 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <title>Kadir Zilkic</title>
         <link rel="stylesheet" href="style.css"> 
-    </head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <body>
 
         <section class="header">
             <nav>
                 <a href="index.html"><img src="logoDentica.PNG"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="#">POČETNA</a></li>
                         <li><a href="#">O NAMA</a></li>
@@ -23,22 +24,107 @@
                         <li><a href="#">KONTAKT</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
 
-                <!-- <div class="text-box">
+                <div class="text-box">
                     <h1>DENTICA WORLD</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="">Posetite Nas</a>
-                </div> -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="hero-btn">Posetite Nas</a>
+                </div>
+        </section>
+
+<!-- #################### U S L U G E ###################### -->
+<div class="ostalo">
+        <section class="usluge">
+            <h1>Usluge Koje Nudimo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            
+            <div class="row">
+                <div class="usluge-col">
+                    <h3>Popravka Zuba</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+                <div class="usluge-col">
+                    <h3>Izbeljivanje Zuba</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+                <div class="usluge-col">
+                    <h3>Estetska Stomatologija</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- ################# D O D A T N O ################ -->
 
+        <section class="lorem">
+            <h1>Lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="row">
+                <div class="lorem-col">
+                    <img src="london.png">
+                    <div class="layer">
+                        <h3>LOREM</h3>
+                    </div>
+                </div>
+                <div class="lorem-col">
+                    <img src="newyork.png">
+                    <div class="layer">
+                        <h3>IPSUM</h3>
+                    </div>
+                </div>
+                <div class="lorem-col">
+                    <img src="washington.png">
+                    <div class="layer">
+                        <h3>DOLOR</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ################# F A C I L I T I E S############ -->
+
+        <section class="facilities">
+            <h1>FACILITIES</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="dent1.jpg" alt="">
+                    <h3>LOREM</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="dent2.jpg" alt="">
+                    <h3>IPSUM</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="dent3.jpg" alt="">
+                    <h3>DOLOR</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+            </div>
         </section>
         
+    
+    </div>
+<!-- J A V A S C R I P T   FOR   T O G G L E   M E N U -->
+        <script>
 
+            var navLinks = document.getElementById("navLinks");
 
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
 
-
+        </script>
 
     </body>
 </html>
