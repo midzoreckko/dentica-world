@@ -150,6 +150,15 @@ nav .fa {
         padding: 30px;
     }
 
+    .layer:hover h3{
+        bottom: 49%;
+        opacity: 1;
+    }
+
+    .layer:hover {
+        background: rgba(179, 250, 184, 0.7);
+    }
+
 }
 
 
