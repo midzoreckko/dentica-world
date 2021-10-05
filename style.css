@@ -117,8 +117,8 @@ nav .fa {
 
 
 /* ##################### M O B I L E ######################### */
+@media (max-width: 700px) {
 
-@media(max-width: 700px) {
     .text-box h1 {
         font-size: 20px;
     }
@@ -126,7 +126,8 @@ nav .fa {
     body {
         overflow-x: hidden;
     }
-    .nav-links ul li {
+
+	.nav-links ul li {
         display: block;
     }
     .nav-links {
@@ -162,7 +163,7 @@ nav .fa {
     .layer:hover {
         background: rgba(179, 250, 184, 0.7);
     }
-
+    
 }
 
 
@@ -252,7 +253,6 @@ h3 {
     left: 0;
     transition: 0.5s;
     }
-}
 
 /* ############# F A C I L I T I E S #################### */
 
