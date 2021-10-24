@@ -10,7 +10,7 @@ body {
 }
 
 @media (max-width: 700px) {
-    body {
+   .header {
         overflow-y: hidden;
     }
 }
