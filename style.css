@@ -6,14 +6,13 @@
 
 body {
     overflow-x: hidden;
-    background-color: #303a4f;
+    /* background-color: #303a4f; */
 }
 
-@media (max-width: 700px) {
-   .header {
-        overflow-y: hidden;
-    }
+h1, h2, h3, h4 {
+    color: #303a4f;
 }
+
 
 
 .header {
@@ -25,42 +24,12 @@ body {
     position: relative;
 }
 
-#slider {
-    overflow: hidden;
-    border-bottom: 5px solid black;
-}
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 15s slider infinite;
-    
-}
-
-#slider figure img {
-    width: 20%;
-    float: left;
-}
-
-@keyframes slider{ 
-    0%{left: 0;}
-    20%{left: 0;}
-    25%{left: -100%;}
-    45%{left: -100%;}
-    50%{left: -200%;}
-    70%{left: -200%;}
-    75%{left: -300%;}
-    95%{left: -300%;}
-    100%{left: -400%;}
-}
-
 nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(#303030, #444444);
+    /* background-image: linear-gradient(#303030, #444444); */
     margin-bottom: 5px;
 }
 
@@ -82,14 +51,15 @@ nav img {
 
 .nav-links ul li a {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
+    color: #303a4f;
 }
 
 .nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #303a4f;
+    background: #b3ffb3;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -97,6 +67,21 @@ nav img {
 
 .nav-links ul li:hover::after {
     width: 100%;
+}
+
+.iconsSocial {
+    width: 100%;
+    display: block;
+}
+
+.iconsSocial img {
+    width: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.iconsSocial a {
+    text-decoration: none;
 }
 
 .text-box {
@@ -215,8 +200,16 @@ nav .fa {
     .layer:hover {
         background: rgba(179, 250, 184, 0.7);
     }
+
+    .iconsSocial img {
+        padding:0%;
+        padding-left: 30px;
+    }
+
     
 }
+
+
 
 
 /* ##################### U S L U G E ###########################*/
@@ -305,6 +298,31 @@ h3 {
     left: 0;
     transition: 0.5s;
     }
+
+    .layer:hover {
+        background: rgba(179, 250, 184, 0.7);
+    }
+
+    .layer h3{
+        width: 100%;
+        font-weight: 500;
+        color: #777;
+        font-size: 26px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0,5s;
+
+    }
+
+    .layer:hover h3{
+        bottom: 49%;
+        opacity: 1;
+    }
+
+   
 
 /* ############# F A C I L I T I E S #################### */
 
@@ -422,7 +440,7 @@ h3 {
 }
 
 .icons .fa {
-    color: #fff;
+    color: #303a4f;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
