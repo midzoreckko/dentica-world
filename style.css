@@ -84,7 +84,7 @@ nav img {
     text-decoration: none;
 }
 
-.text-box {
+/* .text-box {
     width: 90%;
     color: #fff;
     position: absolute;
@@ -95,9 +95,8 @@ nav img {
     
 }
 
-/* .ostalo {
-    background-color: #303a4f;
-} */
+
+
 
 .text-box h1 {
     font-size: 62px;
@@ -129,7 +128,77 @@ nav img {
     opacity: 0.6;
     color: #303a4f;
     font-weight: 700;
+} */
+
+/* ############# TEXT ANIMATION ############## */
+
+@keyframes tipsy {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  
+
+  
+   a.textAnimation {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  a.textAnimation:before,
+  a.textAnimation:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 15px solid #303a4f;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+  }
+  
+  a.textAnimation:before {
+    border-color: #303a4f #303a4f rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  a.textAnimation:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #303a4f #303a4f;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+  }
+
+  @media (max-width: 700px) {
+    a.textAnimation {
+        color: #fffbf1;
+        text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: -3px;
+        margin: 0;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    
 }
+
+/* ############## TEXT ANIMATION END ##########*/
 
 nav .fa {
     display: none;
@@ -151,6 +220,8 @@ nav .fa {
     font-size: 20px;
     line-height: 1.5;
 }
+
+
 
 
 /* ##################### M O B I L E ######################### */
@@ -203,7 +274,7 @@ nav .fa {
 
     .iconsSocial img {
         padding:0%;
-        padding-left: 30px;
+        padding-left: 20px;
     }
 
     
@@ -402,7 +473,7 @@ h3 {
 .cta {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(cta.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(cta.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
