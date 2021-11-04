@@ -188,15 +188,15 @@ nav img {
     a.textAnimation {
         color: #fffbf1;
         text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: bold;
         text-decoration: none;
-        letter-spacing: -3px;
+        letter-spacing: 0.5px;
         margin: 0;
         position: absolute;
         top: 25%;
-        left: 66%;
-        transform: translateX(-50%) translateY(-50%);
+        left: 50%;
+        transform: translateX(-20%) translateY(-50%);
       }
     
 }
