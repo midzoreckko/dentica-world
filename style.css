@@ -4,10 +4,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+html, body {
     overflow-x: hidden;
-    /* background-color: #303a4f; */
-}
+  }
+  body {
+    position: relative
+  }
+
+
 
 h1, h2, h3, h4 {
     color: #303a4f;
@@ -231,9 +235,12 @@ nav .fa {
         font-size: 20px;
     }
 
-    body {
+    html, body {
         overflow-x: hidden;
-    }
+      }
+      body {
+        position: relative
+      }
 
 	.nav-links ul li {
         display: block;
